@@ -1,0 +1,35 @@
+{
+    "name": "webpack-build-tools",
+    "version": "0.1.0",
+    "description": "A helper for separating concerns related to webpack environment and preset config files",
+    "main": "index.js",
+    "engines": {
+        "node": ">=14"
+    },
+    "scripts": {
+        "prettier": "prettier --ignore-path .gitignore .",
+        "format:check": "npm run prettier -- --list-different",
+        "format:fix": "npm run prettier -- --write",
+        "lint": "eslint .",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peterleiva/webpack-build-tools.git"
+    },
+    "keywords": [
+        "webpack",
+        "helper"
+    ],
+    "author": "Peter Leiva <pleiva@id.uff.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/peterleiva/webpack-build-tools/issues"
+    },
+    "homepage": "https://github.com/peterleiva/webpack-build-tools#readme",
+    "devDependencies": {
+        "eslint": "^7.25.0",
+        "eslint-config-prettier": "^8.3.0",
+        "prettier": "^2.2.1"
+    }
+}
