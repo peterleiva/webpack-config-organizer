@@ -9,7 +9,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "typeAcquisition": {
-        "include": ["@types/webpack"]
+        "include": ["@types/webpack", "@types/jest"]
     },
     "include": ["lib/**/*", "webpack"],
     "exclude": ["dist", "node_modules"]
