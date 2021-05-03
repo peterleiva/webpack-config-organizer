@@ -4,8 +4,9 @@
     "description": "A helper for separating concerns related to webpack environment and preset config files",
     "main": "index.js",
     "engines": {
-        "node": ">=14"
+        "node": ">=16"
     },
+    "type": "module",
     "scripts": {
         "prettier": "prettier --ignore-path .gitignore .",
         "format:check": "npm run prettier -- --list-different",
@@ -30,11 +31,15 @@
     },
     "homepage": "https://github.com/peterleiva/webpack-build-tools#readme",
     "devDependencies": {
+        "@babel/core": "^7.14.0",
+        "@babel/preset-env": "^7.14.0",
         "@types/jest": "^26.0.23",
+        "babel-jest": "^26.6.3",
         "debug": "^4.3.1",
         "eslint": "^7.25.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-jest": "^24.3.6",
+        "eslint-plugin-node": "^11.1.0",
         "husky": "^6.0.0",
         "jest": "^26.6.3",
         "jest-watch-typeahead": "^0.6.3",
@@ -42,6 +47,7 @@
     },
     "dependencies": {
         "cosmiconfig": "^7.0.0",
+        "lodash": "^4.17.21",
         "webpack-merge": "^5.7.3"
     }
 }
