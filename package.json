@@ -29,6 +29,7 @@
     },
     "homepage": "https://github.com/peterleiva/webpack-build-tools#readme",
     "devDependencies": {
+        "@types/jest": "^26.0.23",
         "debug": "^4.3.1",
         "eslint": "^7.25.0",
         "eslint-config-prettier": "^8.3.0",
