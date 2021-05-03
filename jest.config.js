@@ -3,11 +3,12 @@
  * https://jestjs.io/docs/en/configuration.html
  */
 
-module.exports = {
+export default {
+	collectCoverage: true,
 	coverageDirectory: "coverage",
 	coveragePathIgnorePatterns: ["/node_modules/", "/dist/"],
-
 	coverageProvider: "v8",
+
 	testEnvironment: "node",
 
 	watchPlugins: [
