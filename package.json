@@ -19,7 +19,7 @@
     "lint-staged": {
         "./lib/*": [
             "eslint",
-            "prettier --list-differente"
+            "prettier --list-different"
         ]
     },
     "repository": {
