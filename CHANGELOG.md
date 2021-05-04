@@ -7,9 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.2.0-alpha.1] - 2021-05-04
+
 ### Added
 
-- [`applyPreset`](/lib/apply-presets.js) to load webpack configuration files presets using webpack environment variables. Consist of predefined configs which can be used for separation of concerns or for rapid config tests. [read more](https://webpack.js.org/guides/environment-variables/)
-- [`load-environment`](/lib/load-environment.js) load various webpack environment. You can use for define configuration specific for a environment, common environments can be development, production, debug, test and so on
+- [`applyPreset`](/lib/apply-presets.js) - Load a series of webpack configuration presets using webpack environment variables. Consist of predefined configs which can be used for separation of concerns or for rapid tests. [read more](https://webpack.js.org/guides/environment-variables/)
+- [`load-environment`](/lib/load-environment.js) - Load webpack environment. You can use for define environment specific configuration. Common environments can be development, production, debug, test and so on
+- [`loader`](/lib/loader.js) - Loads webpackc onfiguration file given it a path and environment object
 
 [unreleased]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...HEAD

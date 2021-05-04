@@ -1,6 +1,6 @@
 {
     "name": "webpack-build-tools",
-    "version": "0.1.0",
+    "version": "0.2.0-alpha.1",
     "description": "A helper for separating concerns related to webpack environment and preset config files",
     "main": "./lib/index.js",
     "engines": {
