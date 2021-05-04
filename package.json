@@ -7,6 +7,9 @@
         "node": ">=15.3"
     },
     "type": "module",
+    "directories": {
+        "lib": "./lib"
+    },
     "scripts": {
         "prettier": "prettier --ignore-path .gitignore .",
         "format:check": "npm run prettier -- --list-different",
