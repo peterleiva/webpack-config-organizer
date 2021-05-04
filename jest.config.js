@@ -11,6 +11,8 @@ export default {
 
 	testEnvironment: "node",
 
+	setupFilesAfterEnv: ["jest-extended"],
+
 	watchPlugins: [
 		"jest-watch-typeahead/filename",
 		"jest-watch-typeahead/testname",
