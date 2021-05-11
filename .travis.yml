@@ -1,9 +1,5 @@
 language: node_js
 node_js: lts/fermium
-branches:
-  only:
-    - canary
-    - main
 jobs:
   include:
     - stage: Validations
@@ -28,6 +24,7 @@ jobs:
           repo: peterleiva/webpack-config-organizer
           tags: true
           all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^(main|canary)$
         skip_cleanup: true
 
 notifications:
