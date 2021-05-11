@@ -16,7 +16,9 @@ jobs:
     name: Building commonjs modules
   - script: npm t
     name: Testing with Jest
+
   - stage: Deploy
+    name: Deploying to npm
     deploy:
       provider: npm
       email: pleiva@id.uff.br

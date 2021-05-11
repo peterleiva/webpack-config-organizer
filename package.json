@@ -26,12 +26,13 @@
         "lint": "eslint .",
         "test": "jest",
         "test:watch": "npm t -- --watch",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "prepublish": "npm run build"
     },
     "lint-staged": {
         "./lib/*": [
             "eslint",
-            "prettier --list-different"
+            "prettier --write"
         ]
     },
     "repository": {
