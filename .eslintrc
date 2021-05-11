@@ -3,14 +3,9 @@
         "es2021": true,
         "node": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:node/recommended-module",
-        "prettier"
-    ],
+    "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
     "parserOptions": {
-        "ecmaVersion": 2021,
-        "sourceType": "module"
+        "ecmaVersion": 2021
     },
 
     "overrides": [
@@ -23,9 +18,9 @@
             "plugins": ["jest"]
         },
         {
-            "files": "*.cjs",
-            "parserOptions": {
-                "sourceType": "script"
+            "files": "./*.{c,}js",
+            "rules": {
+                "node/no-unpublished-require": "off"
             }
         }
     ]
