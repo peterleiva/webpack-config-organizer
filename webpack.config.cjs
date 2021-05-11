@@ -1,19 +1,17 @@
-import path, { dirname } from "path"
-import { fileURLToPath } from "url"
-import nodeExternals from "webpack-node-externals"
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const path = require("path")
+const nodeExternals = require("webpack-node-externals")
 
 /**
  * @return {import('webpack').Configuration}
  */
-export default env => {
+module.exports = env => {
 	const { mode } = env
 
 	return {
 		mode,
 
 		target: "node",
+		externalsPresets: { node: true },
 		externals: [nodeExternals()],
 		resolve: {
 			extensions: [".js", ".cjs", ".mjs"],
