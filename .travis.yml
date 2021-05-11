@@ -23,7 +23,7 @@ jobs:
         provider: npm
         email: "${NPM_EMAIL}"
         api_key:
-          secure: ZMzGE3fkiPRDwOprUJvpR3EeE3aSAcGp8n3kXcSOZBUHJbZHDlEhtKrYMozU0gamp/eT8wUQpNFAYNJ+657bklI7alUwCXRKQ7JfV8LYk9lWv2F8DKoL/znsPckxipO5A+udslE6iPPNvGDboDVnb5Dd9RoW4dXJ9a89HSJRs5nc0wCLdBpzvb5aX0ENB+wQaoZirbxk1I2aeR7YFQI0Q7BjUVHKl496hJZoEfCh/GM2bsCpNxXyo9282OrtNqBWreHKirfTcmXicEO2LDWZ9aEz1B8DG6XmOifQqO9ZA2d+tx50fMaOn0agjaGmXWnI7NsaXu1ehSo/SbZyH+8UpocR/s2cgdbh8YEqFjOnXVKs78SRlGuJsE9zOnaJducs2gpl3JiTpfIHFysMpJezbTszx5oGvVw6IieQmRbPv9089yqLz6RRP/Rl2kGW6vibTnFtAGEzJ4O8EFFobf5/4KWkg7YyKGJoHqr4BWAserntOZHBDpJqcQddolij97/GdyBh3dHCaAq4//Oq8KGw64i8keYhQME372E4AoOsRN3PDRaPcOM4RD3jlHIa0r/L+0GiqfsfQbLfM3g9I/IZIIzVOiI8f4kcW6eeXqc7yYE86dBDh/qlT7YQ2xhariiA7gK8gknpoHrJtBR+mW07Eq3IshD2sP/n+L8LCJv17Es=
+          secure: "${NPM_TOKEN}"
         on:
           repo: peterleiva/webpack-config-organizer
           all_branches: true
