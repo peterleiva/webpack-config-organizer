@@ -1,5 +1,5 @@
 {
-    "name": "webpack-build-tools",
+    "name": "webpack-config-organizer",
     "version": "0.2.0-alpha.1",
     "description": "A helper for separating concerns related to webpack environment and preset config files",
     "main": "./lib/index.js",
@@ -42,7 +42,7 @@
         "webpack",
         "helper"
     ],
-    "author": "Peter Leiva <pleiva@id.uff.br>",
+    "author": "Peter Leiva <contact@peter.dev.br>",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/peterleiva/webpack-build-tools/issues"
