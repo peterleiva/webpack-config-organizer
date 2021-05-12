@@ -1,3 +1,6 @@
 coverage
 .vscode
 .husky
+__tests__
+__snapshots__
+__mocks__
