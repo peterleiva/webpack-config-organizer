@@ -7,13 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v0.2.0] - 2021-05-12
+## [0.2.0] - 2021-05-12
 
 ### Added
 
 - [`organizer`](/lib/organizer.js) - Uses [`applyPresets`](/lib/apply-presets.js) and [`loadEnvironment`](/lib/load-environment.js) to load webpack configuration files. It also defines default applyPresets which can be loaded regarledess of environment options
 
-## [v0.2.0-alpha.1] - 2021-05-04
+## [0.2.0-alpha.1] - 2021-05-04
 
 ### Added
 
@@ -23,4 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [unreleased]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...HEAD
 [0.2.0]: https://github.com/peterleiva/webpack-build-tools/compare/v0.2.0-alpha.1...v0.2.0
-[0.2.0-alpha]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...v0.2.0-alpha.1
+[0.2.0-alpha.1]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...v0.2.0-alpha.1
