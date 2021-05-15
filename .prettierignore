@@ -1,0 +1,8 @@
+.editorconfig
+.*ignore
+LICENSE
+coverage
+dist
+node_modules
+reports
+.gitattributes
