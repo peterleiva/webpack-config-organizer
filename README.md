@@ -1,4 +1,4 @@
-[![Testing](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/test.yml/badge.svg?branch=github-actions&event=push)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/test.yml)
+[![Publish package to npm](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml)
 
 # webpack-config-organizer
 
