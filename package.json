@@ -4,7 +4,7 @@
     "description": "A helper for separating concerns related to webpack environment and preset config files",
     "main": "./lib/index.js",
     "engines": {
-        "node": ">=15.3"
+        "node": ">=14"
     },
     "exports": {
         "node": {
@@ -20,8 +20,8 @@
     "scripts": {
         "build": "webpack --env mode=production",
         "dev": "npm run build -- --watch",
-        "prettier": "prettier --ignore-path .gitignore .",
-        "format:check": "npm run prettier -- --list-different",
+        "prettier": "prettier .",
+        "format:check": "npm run prettier -- --check",
         "format:fix": "npm run prettier -- --write",
         "lint": "eslint .",
         "test": "jest",
@@ -29,10 +29,8 @@
         "prepare": "husky install && npm run build"
     },
     "lint-staged": {
-        "./lib/*": [
-            "eslint",
-            "prettier --write"
-        ]
+        "./lib/*": "eslint",
+        "*": "prettier --write"
     },
     "repository": {
         "type": "git",
