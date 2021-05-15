@@ -1,8 +1,4 @@
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-
-[![Publish package to npm](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml)
-
-[![Build & Test](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![Publish package to npm](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml) [![Build & Test](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml)
 
 # Webpack config organizer
 
