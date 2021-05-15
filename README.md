@@ -5,9 +5,6 @@
 [![Build & Test](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml)
 
 # Webpack config organizer
-
-A brief description of what this project does and who it's for
-
 Webpack helper to organize your configurations, separating
 them by concerns. The package achieve that by using two scope
 of files: presets and environments. Thereof you can define two
@@ -35,13 +32,13 @@ to tell where to look for (`package.json` or `.webpack-config-organizerrc.json`)
 // package.json
 {
     "webpack-config-organizer": {
-        "base": "path/to/your/env-and-presets-configs", // relative to your project folder
+        "base": "path/to/your/env-and-presets-configs/", // relative to your project folder
         "environment: {
-            "path": "/base/path/to/environment/configs", // relative to "base"
+            "path": "/base/path/to/environment/configs/", // relative to "base"
             "prefix": "env-files-prefix"
         },
         "presets": {
-            "path": "/base/path/to/presets/configs", // relative to "base"
+            "path": "/base/path/to/presets/configs/", // relative to "base"
             "prefix": "presets-prefix"
         }
     }
