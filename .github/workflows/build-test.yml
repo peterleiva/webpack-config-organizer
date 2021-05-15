@@ -1,0 +1,75 @@
+name: Build & Test
+on: [push]
+
+jobs:
+  format-check:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        node:
+          - "14.x"
+        os:
+          - windows-latest
+          - ubuntu-latest
+          - macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node}}
+      - run: npm ci
+      - run: npm run format:check
+
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node:
+          - "14.x"
+          - "16.x"
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node}}
+      - run: npm ci
+      - run: npm run lint -- --cache
+
+  test:
+    needs: [format-check, lint]
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        node:
+          - "14.x"
+          - "16.x"
+        os:
+          - ubuntu-latest
+          - macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node}}
+      - run: npm ci
+      - run: npm t
+
+  build:
+    needs: test
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        node:
+          - "14.x"
+          - "16.x"
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node}}
+      - run: npm ci
+      - run: npm run build
