@@ -5,6 +5,7 @@
 [![Build & Test](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml)
 
 # Webpack config organizer
+
 Webpack helper to organize your configurations, separating
 them by concerns. The package achieve that by using two scope
 of files: presets and environments. Thereof you can define two
