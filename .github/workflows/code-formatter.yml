@@ -1,0 +1,39 @@
+name: Formatting
+on: [push]
+
+jobs:
+  format-check:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        node:
+          - "14.x"
+        os:
+          - windows-latest
+          - ubuntu-latest
+          - macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{matrix.node}}
+      - run: npm ci
+      - run: npm run format:check
+
+  format-fix:
+    runs-on: ubuntu-latest
+    needs: format-check
+    if: ${{ failure() }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v3.3
+        with:
+          prettier_options: --write .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
