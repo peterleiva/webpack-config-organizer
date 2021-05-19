@@ -2,18 +2,18 @@
 
 # Webpack config organizer
 
-Webpack helper to organize your configurations, separating
-them by concerns. The package achieve that by using two scope
+Webpack helper to organize your configurations separating
+them by concerns. This package achieves that by using two scope
 of files: presets and environments. Thereof you can define two
 types of files and both of them relies upon webpack `--env` CLI
 option. Environment configuration files help you define a config
-for different kinds of environments (dev, prod, debug, ci , and so on),
+for different kinds of environments (dev, prod, debug, ci, and so on),
 while presets help you create predefined settings which help you
-to fast test a new build or just use make it cleaner
+to fast test a new build or just use make it cleaner.
 
 ## Installation
 
-Install using npm
+Install using npm:
 
 ```bash
   npm install --save-dev webpack-config-organizer
@@ -42,8 +42,8 @@ to tell where to look for (`package.json` or `.webpack-config-organizerrc.json`)
 }
 ```
 
-At your `webpack.config.js` file use the tool to load your
-configurations
+On your `webpack.config.js` file use the tool to load your
+configurations:
 
 ```javascript
 const { organizer } = require("webpack-config-organizer")
@@ -56,9 +56,9 @@ module.exports = organizer({
 })
 ```
 
-## Using defaults presets
+## Using default presets
 
-You can define default presets which is always loaded
+You can define default presets which are always loaded
 
 ```javascript
 const { organizer } = require("webpack-config-organizer")
@@ -73,7 +73,7 @@ module.exports = organizer(["typescript", "analyzer"], {
 
 ## Examples
 
-Suppose you have the following configs
+Suppose you have the following configurations:
 
 ```bash
 $ cd project-folder
@@ -114,7 +114,7 @@ To load **`typescript` and `analyzer` presets** and **`debug` environment**:
 $ npx webpack --env mode=debug --env.presets.typescript --env.presets.analyzer
 ```
 
-### default presets
+### Default presets
 
 If you don't want to specify presets using the CLI, you can load them
 no matter what:
