@@ -18,7 +18,7 @@ jobs:
       - run: npm run lint -- --cache
 
   test:
-    needs: [format-check, lint]
+    needs: lint
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
