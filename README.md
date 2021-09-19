@@ -28,17 +28,17 @@ to tell where to look for (`package.json` or `.webpack-config-organizerrc.json`)
 ```json
 // package.json
 {
-    "webpack-config-organizer": {
-        "base": "path/to/your/env-and-presets-configs/", // relative to your project folder
-        "environment: {
-            "path": "/base/path/to/environment/configs/", // relative to "base"
-            "prefix": "env-files-prefix"
-        },
-        "presets": {
-            "path": "/base/path/to/presets/configs/", // relative to "base"
-            "prefix": "presets-prefix"
-        }
-    }
+	"webpack-config-organizer": {
+		"base": "path/to/your/env-and-presets-configs/", // relative to your project folder
+		"environment": {
+			"path": "/base/path/to/environment/configs/", // relative to "base"
+			"prefix": "env-files-prefix"
+		},
+		"presets": {
+			"path": "/base/path/to/presets/configs/", // relative to "base"
+			"prefix": "presets-prefix"
+		}
+	}
 }
 ```
 
@@ -94,17 +94,17 @@ and the given search parameters:
 ```json
 // package.json
 {
-    "webpack-config-organizer": {
-        "base": "build-tools",
-        "environment: {
-            "path": "env",
-            "prefix": "webpack."
-        },
-        "presets": {
-            "path": "presets",
-            "prefix": "webpack."
-        }
-    }
+	"webpack-config-organizer": {
+		"base": "build-tools",
+		"environment": {
+			"path": "env",
+			"prefix": "webpack."
+		},
+		"presets": {
+			"path": "presets",
+			"prefix": "webpack."
+		}
+	}
 }
 ```
 
