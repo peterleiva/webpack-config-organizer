@@ -1,6 +1,6 @@
 {
     "name": "webpack-config-organizer",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "A helper for separating concerns related to webpack environment and preset config files",
     "main": "./lib/index.js",
     "engines": {
