@@ -1,4 +1,4 @@
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![Publish package to npm](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/npm-publish.yml) [![Build & Test](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/peterleiva/webpack-config-organizer/actions/workflows/build-test.yml) [![CodeFactor](https://www.codefactor.io/repository/github/peterleiva/webpack-config-organizer/badge)](https://www.codefactor.io/repository/github/peterleiva/webpack-config-organizer)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs) [![Publish package to npm](https://github.com/pherval/webpack-config-organizer/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/pherval/webpack-config-organizer/actions/workflows/npm-publish.yml) [![Build & Test](https://github.com/pherval/webpack-config-organizer/actions/workflows/build-test.yml/badge.svg)](https://github.com/pherval/webpack-config-organizer/actions/workflows/build-test.yml) [![CodeFactor](https://www.codefactor.io/repository/github/pherval/webpack-config-organizer/badge)](https://www.codefactor.io/repository/github/pherval/webpack-config-organizer)
 
 # Webpack config organizer
 
@@ -141,7 +141,7 @@ $ npx webpack
 Clone the project
 
 ```bash
-  git clone https://github.com/peterleiva/webpack-config-organizer
+  git clone https://github.com/pherval/webpack-config-organizer
 ```
 
 Go to the project directory

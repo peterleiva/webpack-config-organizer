@@ -21,6 +21,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`load-environment`](/lib/load-environment.js) - Load webpack environment. You can use for define environment specific configuration. Common environments can be development, production, debug, test and so on
 - [`loader`](/lib/loader.js) - Loads webpackc onfiguration file given it a path and environment object
 
-[unreleased]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...HEAD
-[0.2.0]: https://github.com/peterleiva/webpack-build-tools/compare/v0.2.0-alpha.1...v0.2.0
-[0.2.0-alpha.1]: https://github.com/peterleiva/webpack-build-tools/compare/v0.1.0...v0.2.0-alpha.1
+[unreleased]: https://github.com/pherval/webpack-config-organizer/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/pherval/webpack-config-organizer/compare/v0.2.0-alpha.1...v0.2.0
+[0.2.0-alpha.1]: https://github.com/pherval/webpack-config-organizer/compare/v0.1.0...v0.2.0-alpha.1
