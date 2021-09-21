@@ -7,7 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.3.0]
+## [0.3.1] - 2021-09-21
+
+### Fixed
+
+- Log errors to stderr, to get a better graps of what's going on
+- Send webpack environment to loaded presets
+
+## [0.3.0] - 2021-09-19
 
 ### Changed
 
@@ -31,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`load-environment`](/lib/load-environment.js) - Load webpack environment. You can use for define environment specific configuration. Common environments can be development, production, debug, test and so on
 - [`loader`](/lib/loader.js) - Loads webpackc onfiguration file given it a path and environment object
 
-[unreleased]: https://github.com/pherval/webpack-config-organizer/compare/v0.3.0...HEAD
+[unreleased]: https://github.com/pherval/webpack-config-organizer/compare/v0.3.1...HEAD
+[0.3.1]: https://github.com/pherval/webpack-config-organizer/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/pherval/webpack-config-organizer/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/pherval/webpack-config-organizer/compare/v0.2.0-alpha.1...v0.2.0
 [0.2.0-alpha.1]: https://github.com/pherval/webpack-config-organizer/compare/v0.1.0...v0.2.0-alpha.1
