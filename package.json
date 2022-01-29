@@ -73,7 +73,7 @@
     "dependencies": {
         "cosmiconfig": "^7.0.0",
         "lodash": "^4.17.21",
-        "webpack-merge": "^5.7.3"
+        "webpack-merge": "^5.8.0"
     },
     "peerDependencies": {
         "webpack": "^5.37.0"
